@@ -1,0 +1,20 @@
+<h3>Edit Item</h3>
+<form>
+    <div>
+        <label>Marca</label>
+        <input type="text" 
+               ng-model="$ctrl.item.marca">
+    </div>
+    <div>
+        <label>Modelo</label>
+        <input type="text" 
+               ng-model="$ctrl.item.modelo">
+    </div>    
+    <div>
+        <label>Precio</label>
+        <input type="text" 
+               ng-model="$ctrl.item.precio">
+    </div>
+
+    <button ng-click="$ctrl.save($ctrl.item)">Save</button>
+</form>

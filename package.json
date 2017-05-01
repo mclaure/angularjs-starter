@@ -69,5 +69,8 @@
     "extends": [
       "xo-space"
     ]
+  },
+  "dependencies": {
+    "ng-table": "^3.0.1"
   }
 }

@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "marca": "Dell",
+      "modelo": "Lattitude 6430u",
+      "precio": "2000"
+    },
+    {
+      "id": 2,
+      "marca": "HP",
+      "modelo": "Pavillon 1234B",
+      "precio": "358"
+    },
+    {
+      "marca": "Lenovo",
+      "modelo": "T 880",
+      "precio": "3500",
+      "id": 3
+    }
+  ]
+}

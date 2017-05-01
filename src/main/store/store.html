@@ -1,0 +1,10 @@
+<div class="list-item" cg-busy="$ctrl.promise">
+    <app-item ng-repeat="item in $ctrl.items"
+                 item="item"
+                 on-delete="$ctrl.onDelete()">
+    </app-item>            
+</div>     
+      <a ui-sref="add" class="link"> Add a New Item to the Store</a>
+<div ng-show="$ctrl.error">
+    Error: {{$ctrl.error}}
+</div>

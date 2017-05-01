@@ -10,6 +10,27 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
     .state('app', {
       url: '/',
-      component: 'app'
+      component: 'main',
+      redirectTo: 'login'
+    })
+   .state('login', {
+      parent: 'app',
+      url: 'login',
+      component: 'appLogin'
+    })    
+   .state('store', {
+      parent: 'app',
+      url: 'store',
+      component: 'appStore'
+    })
+    .state('edit', {
+      parent: 'app',
+      url: 'edit/:idItem',
+      component: 'editItem'
+    })
+    .state('add', {
+      parent: 'app',
+      url: 'add',
+      component: 'addItem'
     });
 }

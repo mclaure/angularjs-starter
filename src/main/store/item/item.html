@@ -1,0 +1,20 @@
+<div class="item-row">
+    <div class="id-row">
+        {{$ctrl.item.id}}
+    </div>
+    <div class="marca-row">
+        {{$ctrl.item.marca}}
+    </div>
+    <div class="modelo-row">
+        {{$ctrl.item.modelo}}
+    </div>    
+    <div class="precio-row">
+        {{$ctrl.item.precio}}
+    </div>    
+    <div class="opciones-row">
+        <a href="" ui-sref="edit({idItem: $ctrl.item.id})">edit</a>
+        &nbsp;
+        &nbsp;
+        <a href="" ng-click="$ctrl.delete($ctrl.item)">delete</a>  
+    </div>
+</div>
